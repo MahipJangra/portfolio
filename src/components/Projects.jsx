@@ -7,7 +7,7 @@ const projects = [
     badgeType: "sih",
     desc: "Led complete frontend development for our SIH 2025 project. Built a responsive React UI, integrated REST APIs with the backend team, and delivered a polished interface under tight hackathon deadlines.",
     stack: ["React.js", "REST APIs", "Team Project", "Hackathon"],
-    link: "google.com",
+    link: "https://google.com",
   },
   {
     name: "Launchpad — AI Startup Roadmap Generator",
