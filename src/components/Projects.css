@@ -1,0 +1,75 @@
+.projects-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.proj-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 1.5rem;
+  transition: border-color 0.2s;
+}
+
+.proj-card:hover {
+  border-color: var(--accent);
+}
+
+.proj-card--sih {
+  border-color: rgba(88, 166, 255, 0.25);
+}
+
+.proj-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-bottom: 0.6rem;
+}
+
+.proj-name {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.proj-badge {
+  font-size: 11px;
+  padding: 3px 10px;
+  border-radius: 20px;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.proj-badge--live {
+  color: var(--green);
+  border: 1px solid var(--green-border);
+}
+
+.proj-badge--sih {
+  color: var(--accent);
+  border: 1px solid #1f6feb;
+}
+
+.proj-desc {
+  font-size: 14px;
+  color: var(--text-secondary);
+  line-height: 1.7;
+  margin-bottom: 1rem;
+}
+
+.proj-stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+.proj-tag {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  background: var(--bg);
+  border: 1px solid var(--border-hover);
+  padding: 2px 8px;
+  border-radius: 4px;
+  color: var(--text-secondary);
+}

@@ -1,0 +1,83 @@
+.hero {
+  padding: 5rem 2rem 4rem;
+  max-width: 860px;
+  margin: 0 auto;
+}
+
+.hero-tag {
+  font-family: var(--font-mono);
+  font-size: 13px;
+  color: var(--accent);
+  margin-bottom: 1rem;
+}
+
+.hero-name {
+  font-size: clamp(36px, 6vw, 52px);
+  font-weight: 600;
+  line-height: 1.1;
+  margin-bottom: 0.75rem;
+}
+
+.cursor {
+  display: inline-block;
+  width: 3px;
+  height: 0.85em;
+  background: var(--accent);
+  margin-left: 4px;
+  vertical-align: middle;
+  animation: blink 1s step-end infinite;
+}
+
+@keyframes blink {
+  50% { opacity: 0; }
+}
+
+.hero-sub {
+  font-size: 18px;
+  color: var(--text-secondary);
+  margin-bottom: 2rem;
+  line-height: 1.7;
+}
+
+.hero-btns {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.btn-primary {
+  background: var(--green-border);
+  color: #fff;
+  border: 1px solid var(--green);
+  padding: 0.6rem 1.25rem;
+  border-radius: 6px;
+  font-size: 14px;
+  transition: background 0.2s;
+}
+
+.btn-primary:hover {
+  background: var(--green);
+}
+
+.btn-ghost {
+  background: transparent;
+  color: var(--text-primary);
+  border: 1px solid var(--border-hover);
+  padding: 0.6rem 1.25rem;
+  border-radius: 6px;
+  font-size: 14px;
+  transition: border-color 0.2s;
+}
+
+.btn-ghost:hover {
+  border-color: var(--text-secondary);
+}
+
+@media (max-width: 480px) {
+  .hero {
+    padding: 3rem 1.25rem 2.5rem;
+  }
+  .hero-sub {
+    font-size: 16px;
+  }
+}
