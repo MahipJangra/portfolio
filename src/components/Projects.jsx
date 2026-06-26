@@ -43,14 +43,11 @@ function Projects() {
               {p.link ? (
                 <a
                   href={p.link}
-                  onClick={(e) => {
-                    e.stopPropagation();
-                    window.open(p.link, "_blank");
-                  }}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className={`proj-badge proj-badge--${p.badgeType}`}
                 >
                   {p.badge}
-
                 </a>
               ) : (
                 <span className={`proj-badge proj-badge--${p.badgeType}`}>
