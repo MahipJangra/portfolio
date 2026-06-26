@@ -10,6 +10,7 @@
   border-radius: 8px;
   padding: 1.5rem;
   transition: border-color 0.2s;
+  cursor: pointer;
 }
 
 .proj-card:hover {
@@ -39,6 +40,13 @@
   border-radius: 20px;
   white-space: nowrap;
   flex-shrink: 0;
+  pointer-events: auto;
+  cursor: pointer;
+}
+
+.proj-card a.proj-badge {
+  text-decoration: none;
+  pointer-events: auto;
 }
 
 .proj-badge--live {
